@@ -1,0 +1,28 @@
+.app-menu-component {
+	height: 72px;
+	border-bottom: solid 2px #1c1c1c; // todo: remove
+	display: flex;
+	justify-content: space-between;
+	.menu-title {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+    }
+    .menu-items {
+		display: flex;
+        align-items: center;
+        :not(:last-child) {
+            margin-right: 24px;
+        }
+
+        a {
+            &:active {
+                color: #ffbd69;
+            }
+            &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+    }
+}

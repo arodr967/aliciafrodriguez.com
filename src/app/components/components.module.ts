@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
 	declarations: [MenuComponent],
-	imports: [],
+	imports: [BrowserModule],
 	exports: [MenuComponent],
 	providers: [],
 })
